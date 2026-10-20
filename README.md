@@ -1,13 +1,13 @@
 # Musanze Harvest Intelligence Service
-**AI-A2-6883** | Individual Assignment 2 | SWE 3513 Artificial Intelligence
+**AI-A2-7419** | Individual Assignment 2 | SWE 3513 Artificial Intelligence
 
 ## Student Information
-- **Full Name:** ALI SALAHELDIN KHAMIS ALI
-- **Registration Number:** 25/26883
-- **Institutional Username:** ug2526883@inace.ac.rw
-- **Verification Code:** AI-A2-6883
-- **Python Version:** 3.10+
-- **Tested OS:** Windows 11 
+- **Full Name:** Nuzha Zainalabdeen Mohamed Ismail
+- **Registration Number:** 25/27419
+- **Institutional Username:** ug2527419@ines.ac.rw
+- **Verification Code:** AI-A2-7419
+- **Python Version:** 3.12+
+- **Tested OS:** Windows 11
 
 ## Problem Statement
 A potato cooperative in Musanze receives farm records in inconsistent spreadsheets. Its field officer needs an evidence-based tool that can:
@@ -20,11 +20,11 @@ Internet access may be unreliable, so model training and command-line prediction
 **Ethical Boundary:** This service is a classroom decision-support prototype. It must not claim to replace an agronomist or determine access to finance, insurance, or public services.
 
 ## Dataset
-- **Source:** Synthetic, generated from registration number seed (LLLL=6883)
-- **Size:** 276 base rows + 3 duplicates = 279 total rows
+- **Source:** Synthetic, generated from registration number seed (LLLL=7419)
+- **Size:** 279 base rows + 3 duplicates = 282 total rows
 - **Features:** 7 (rainfall_mm, avg_temp_c, soil_moisture_pct, fertilizer_kg, field_size_ha, season, cooperative_support)
 - **Targets:** yield_tons (regression), high_risk (classification)
-- **Deliberate Issues:** 14 missing values in soil_moisture_pct, 14 in fertilizer_kg, 3 duplicate rows
+- **Deliberate Issues:** 15 missing values in soil_moisture_pct, 14 in fertilizer_kg, 3 duplicate rows
 - **Fingerprint (SHA-256):** See `artifacts/data_fingerprint.txt`
 
 ## Quick Start
@@ -58,7 +58,7 @@ python -m pip install -r requirements.txt
 
 ### 3. Run Full Pipeline
 ```bash
-python run_all.py --student-id your_email@ines.ac.rw --seed 6883
+python run_all.py --student-id ug2527419@ines.ac.rw --seed 7419
 ```
 This will:
 - Generate/recreate the dataset
@@ -113,7 +113,7 @@ curl -X POST http://127.0.0.1:8000/predict \
   "high_risk_prediction": 0,
   "high_risk_probability": 0.2341,
   "cluster": 2,
-  "verification_code": "AI-A2-6883"
+  "verification_code": "AI-A2-7419"
 }
 ```
 
@@ -212,22 +212,23 @@ Test coverage includes:
 **Human Review Required:** All predictions must be reviewed by a qualified agronomist before any operational decisions.
 
 ## Repository
-- **URL:** [Your GitHub repo URL]
-- **Final Commit Hash:** [Run `git rev-parse HEAD` after final commit]
+- **URL:** https://github.com/<your-github-username>/AI-A2-7419.git
+- **Final Commit Hash:** [set on final commit]
 
 ## Evidence Files (for submission)
-- `evidence/AI_A2_2526883_DEMO.mp4` - 2-minute demo video
-- `evidence/AI_A2_2526883_TEST_LOG.pdf` - pytest output
-- `evidence/AI_A2_2526883_DECLARATION.pdf` - Academic integrity declaration
+- `evidence/AI_A2_2527419_DEMO.mp4` - 2-minute demo video
+- `evidence/AI_A2_2527419_TEST_LOG.pdf` - pytest output
+- `evidence/AI_A2_2527419_DECLARATION.pdf` - Academic integrity declaration
 - `evidence/AI_USE.md` - AI assistance disclosure
-- `docs/AI_A2_2526883_REPORT.pdf` - 5-7 page technical report
+- `docs/AI_A2_2527419_REPORT.md` - technical report
 
 ## Submission Package
 ```bash
 # Create submission zip (from parent directory)
-zip -r AI_A2_2526883.zip AI_A2_2526883/
+zip -r AI_A2_2527419.zip AI_A2_2526883/
+# (project folder keeps its original name AI_A2_2526883; the zip uses the new ID)
 ```
-Submit `AI_A2_2526883.zip` through INES e-learning platform.
+Submit `AI_A2_2527419.zip` through INES e-learning platform.
 
 ---
 

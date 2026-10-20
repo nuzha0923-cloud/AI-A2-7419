@@ -49,8 +49,8 @@ EXPECTED_RANGES = {
 EXPECTED_SEASONS = {"A", "B"}
 
 # Student-specific
-LLLL = 6883
-VERIFICATION_CODE = "AI-A2-6883"
+LLLL = 7419
+VERIFICATION_CODE = "AI-A2-7419"
 
 
 def validate_seed(seed: int) -> bool:
@@ -199,7 +199,7 @@ def load_and_validate(csv_path: Path, seed: int) -> pd.DataFrame:
 
 if __name__ == "__main__":
     # Test validation on generated data
-    csv_path = Path(__file__).parent.parent / "data" / "AI_A2_2526883.csv"
+    csv_path = Path(__file__).parent.parent / "data" / "AI_A2_2527419.csv"
     if csv_path.exists():
         df = pd.read_csv(csv_path)
         valid, issues = validate_dataset(df, LLLL)

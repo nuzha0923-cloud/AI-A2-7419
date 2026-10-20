@@ -31,7 +31,7 @@ class TestDataGeneration:
     def test_data_generation_reproducibility(self):
         """Running generation twice with same seed produces identical CSV."""
         generate_data()
-        csv_path = Path(__file__).parent.parent / "data" / "AI_A2_2526883.csv"
+        csv_path = Path(__file__).parent.parent / "data" / "AI_A2_2527419.csv"
         df1 = pd.read_csv(csv_path)
         
         generate_data()
@@ -41,7 +41,7 @@ class TestDataGeneration:
     
     def test_data_fingerprint_stable(self):
         """Data fingerprint matches expected value."""
-        csv_path = Path(__file__).parent.parent / "data" / "AI_A2_2526883.csv"
+        csv_path = Path(__file__).parent.parent / "data" / "AI_A2_2527419.csv"
         fingerprint_path = Path(__file__).parent.parent / "artifacts" / "data_fingerprint.txt"
         
         if fingerprint_path.exists():
@@ -56,10 +56,10 @@ class TestDataGeneration:
     
     def test_dataset_schema(self):
         """Dataset has required columns and structure."""
-        csv_path = Path(__file__).parent.parent / "data" / "AI_A2_2526883.csv"
+        csv_path = Path(__file__).parent.parent / "data" / "AI_A2_2527419.csv"
         df = load_and_validate(csv_path, LLLL)
         
-        assert len(df) == 279  # 276 base + 3 duplicates
+        assert len(df) == 282  # 279 base + 3 duplicates
         assert list(df.columns) == [
             "rainfall_mm", "avg_temp_c", "soil_moisture_pct",
             "fertilizer_kg", "field_size_ha", "season",
@@ -68,16 +68,16 @@ class TestDataGeneration:
     
     def test_missing_values_pattern(self):
         """Missing values only in expected columns with expected counts."""
-        csv_path = Path(__file__).parent.parent / "data" / "AI_A2_2526883.csv"
+        csv_path = Path(__file__).parent.parent / "data" / "AI_A2_2527419.csv"
         df = pd.read_csv(csv_path)
         
-        assert df["soil_moisture_pct"].isna().sum() == 14
+        assert df["soil_moisture_pct"].isna().sum() == 15
         assert df["fertilizer_kg"].isna().sum() == 14
         assert df.drop(columns=["soil_moisture_pct", "fertilizer_kg"]).isna().sum().sum() == 0
     
     def test_duplicates_exist(self):
         """Dataset contains exactly 3 duplicate rows."""
-        csv_path = Path(__file__).parent.parent / "data" / "AI_A2_2526883.csv"
+        csv_path = Path(__file__).parent.parent / "data" / "AI_A2_2527419.csv"
         df = pd.read_csv(csv_path)
         
         assert df.duplicated().sum() == 3
@@ -88,7 +88,7 @@ class TestPreprocessing:
     
     def test_train_test_split_no_leakage(self):
         """Preprocessing fits only on training data."""
-        csv_path = Path(__file__).parent.parent / "data" / "AI_A2_2526883.csv"
+        csv_path = Path(__file__).parent.parent / "data" / "AI_A2_2527419.csv"
         df = pd.read_csv(csv_path)
         
         artifacts = preprocess_pipeline(df)
@@ -111,7 +111,7 @@ class TestPreprocessing:
     
     def test_same_transform_train_test(self):
         """Train and test use same preprocessing."""
-        csv_path = Path(__file__).parent.parent / "data" / "AI_A2_2526883.csv"
+        csv_path = Path(__file__).parent.parent / "data" / "AI_A2_2527419.csv"
         df = pd.read_csv(csv_path)
         
         artifacts = preprocess_pipeline(df)
@@ -285,7 +285,7 @@ class TestReproducibility:
     def test_run_all_reproducible(self):
         """Running run_all.py twice produces same artifacts."""
         # This is an integration test - run once, check artifacts exist
-        csv_path = Path(__file__).parent.parent / "data" / "AI_A2_2526883.csv"
+        csv_path = Path(__file__).parent.parent / "data" / "AI_A2_2527419.csv"
         assert csv_path.exists()
         
         artifacts_dir = Path(__file__).parent.parent / "artifacts"

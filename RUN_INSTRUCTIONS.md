@@ -1,8 +1,8 @@
-# Complete Run Instructions for AI_A2_2526883
+# Complete Run Instructions for AI_A2_2527419
 
 ## Project Location
 ```
-C:\Users\Ali\Desktop\submit\AI_A2_2526883\
+C:\Users\Ali\Desktop\submit\AI_A2_2527419\
 ```
 
 ## Prerequisites
@@ -31,12 +31,12 @@ python -m pip install -r requirements.txt
 
 ## Step 2: Run Full Pipeline
 ```powershell
-python run_all.py --student-id YOUR_EMAIL@ines.ac.rw --seed 6883
+python run_all.py --student-id YOUR_EMAIL@ines.ac.rw --seed 7419
 ```
 Replace `YOUR_EMAIL@ines.ac.rw` with your actual INES email.
 
 **Expected output:**
-- Verification code: AI-A2-6883
+- Verification code: AI-A2-7419
 - Dataset generated with 279 rows
 - All models trained and saved
 - Artifacts created in `artifacts/`
@@ -74,21 +74,21 @@ python -m pytest -q
 ```powershell
 # From parent directory
 cd C:\Users\Ali\Desktop
-Compress-Archive -Path AI_A2_2526883 -DestinationPath AI_A2_2526883.zip
+Compress-Archive -Path AI_A2_2527419 -DestinationPath AI_A2_2527419.zip
 ```
-**Submit:** `AI_A2_2526883.zip` via INES e-learning platform
+**Submit:** `AI_A2_2527419.zip` via INES e-learning platform
 
 ## Required Evidence Files (Create Before Submission)
-1. **`evidence/AI_A2_2526883_DEMO.mp4`** - 2 min demo video (see VIDEO_GUIDE.md)
-2. **`evidence/AI_A2_2526883_TEST_LOG.pdf`** - Export pytest output to PDF
-3. **`evidence/AI_A2_2526883_DECLARATION.pdf`** - Fill and sign declaration template
+1. **`evidence/AI_A2_2527419_DEMO.mp4`** - 2 min demo video (see VIDEO_GUIDE.md)
+2. **`evidence/AI_A2_2527419_TEST_LOG.pdf`** - Export pytest output to PDF
+3. **`evidence/AI_A2_2527419_DECLARATION.pdf`** - Fill and sign declaration template
 4. **`evidence/AI_USE.md`** - Already created
-5. **`docs/AI_A2_2526883_REPORT.pdf`** - 5-7 page technical report (see REPORT_TEMPLATE.md)
+5. **`docs/AI_A2_2527419_REPORT.pdf`** - 5-7 page technical report (see REPORT_TEMPLATE.md)
 
 ## Key Files to Understand for Defense
 | File | Purpose |
 |------|---------|
-| `data/generate_data.py` | Dataset generation with seed 6883 |
+| `data/generate_data.py` | Dataset generation with seed 7419 |
 | `src/validation.py` | Data validation & leakage checks |
 | `src/preprocessing.py` | Train-only fitting pipeline |
 | `src/regression.py` | Regression models + selection |
@@ -103,7 +103,7 @@ Compress-Archive -Path AI_A2_2526883 -DestinationPath AI_A2_2526883.zip
 The assessor may run:
 ```powershell
 # 1. Verify identity and fingerprint
-python run_all.py --student-id YOUR_EMAIL@ines.ac.rw --seed 6883
+python run_all.py --student-id YOUR_EMAIL@ines.ac.rw --seed 7419
 
 # 2. Check fingerprint matches
 type artifacts\data_fingerprint.txt
@@ -136,7 +136,7 @@ python -m pip install -r requirements.txt
 Make sure `.venv312` is activated and `python --version` reports Python 3.12.
 
 ### "Seed mismatch" error
-Ensure you use `--seed 6883` (your LLLL)
+Ensure you use `--seed 7419` (your LLLL)
 
 ### "Model not found" error
 Run `run_all.py` first to generate models
@@ -147,13 +147,13 @@ uvicorn app:app --host 127.0.0.1 --port 8001
 ```
 
 ## Your Unique Values
-- **LLLL (Seed):** 6883
-- **Verification Code:** AI-A2-6883
+- **LLLL (Seed):** 7419
+- **Verification Code:** AI-A2-7419
 - **Base Rows:** 276
 - **Missing per column:** 14
 - **Duplicates:** 3
-- **Registration:** 25/26883
-- **ZIP Name:** AI_A2_2526883.zip
+- **Registration:** 25/27419
+- **ZIP Name:** AI_A2_2527419.zip
 
 ## Deadline
 **Monday, 19 October 2026 at 5:00 PM CAT (Africa/Kigali)**

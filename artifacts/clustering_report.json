@@ -1,111 +1,111 @@
 {
-  "verification_code": "AI-A2-6883",
-  "seed": 6883,
+  "verification_code": "AI-A2-7419",
+  "seed": 7419,
   "silhouette_scores": {
-    "2": 0.14885747898872242,
-    "3": 0.13142058843864127,
-    "4": 0.15258820194347075,
-    "5": 0.14294842644477732,
-    "6": 0.14177413257298307
+    "2": 0.1487616966236063,
+    "3": 0.13706148268405358,
+    "4": 0.16423782302041232,
+    "5": 0.14961563802331349,
+    "6": 0.14675072020385332
   },
   "selected_k": 4,
-  "selected_silhouette": 0.15258820194347075,
+  "selected_silhouette": 0.16423782302041232,
   "cluster_profiles": [
     {
       "cluster_id": 0,
-      "n_farms": 78,
-      "percentage": 27.956989247311824,
+      "n_farms": 68,
+      "percentage": 24.113475177304963,
       "feature_means": {
-        "rainfall_mm": 981.1113615384613,
-        "avg_temp_c": 19.33698717948718,
-        "soil_moisture_pct": 49.428537179487186,
-        "fertilizer_kg": 125.41998589743594,
-        "field_size_ha": 2.0825384615384612,
-        "season": "A",
-        "cooperative_support": 1.0
+        "rainfall_mm": 966.3363573529413,
+        "avg_temp_c": 19.701102941176465,
+        "soil_moisture_pct": 54.35406176470588,
+        "fertilizer_kg": 125.15521029411767,
+        "field_size_ha": 2.031498529411765,
+        "season": "B",
+        "cooperative_support": 0.0
       },
       "feature_stds": {
-        "rainfall_mm": 243.60076990245088,
-        "avg_temp_c": 4.043590016899409,
-        "soil_moisture_pct": 16.331079443062322,
-        "fertilizer_kg": 71.97887096637245,
-        "field_size_ha": 1.1312518806448622,
+        "rainfall_mm": 229.3778637203571,
+        "avg_temp_c": 4.114423216571899,
+        "soil_moisture_pct": 16.167296658276708,
+        "fertilizer_kg": 61.95418222602602,
+        "field_size_ha": 1.1026728136117268,
         "season": null,
         "cooperative_support": 0.0
       },
-      "interpretation": "Cluster 0 contains 78 farms. These farms receive moderate rainfall (800-1000 mm). Average temperatures are moderate (16-22\u00b0C). Soil moisture is moderate (40-60%). Fertilizer use is moderate (50-150 kg). Farms are medium-sized (1-2.5 ha). Predominantly Season B. Most farms receive cooperative support."
+      "interpretation": "Cluster 0 contains 68 farms. These farms receive moderate rainfall (800-1000 mm). Average temperatures are moderate (16-22\u00b0C). Soil moisture is moderate (40-60%). Fertilizer use is moderate (50-150 kg). Farms are medium-sized (1-2.5 ha). Predominantly Season B. Few farms receive cooperative support."
     },
     {
       "cluster_id": 1,
-      "n_farms": 68,
-      "percentage": 24.372759856630825,
+      "n_farms": 74,
+      "percentage": 26.24113475177305,
       "feature_means": {
-        "rainfall_mm": 953.4160014705882,
-        "avg_temp_c": 20.702900000000003,
-        "soil_moisture_pct": 61.82638970588236,
-        "fertilizer_kg": 133.95289558823532,
-        "field_size_ha": 1.5807970588235294,
-        "season": "B",
-        "cooperative_support": 0.4117647058823529
+        "rainfall_mm": 903.1311756756758,
+        "avg_temp_c": 19.112358108108104,
+        "soil_moisture_pct": 64.92331891891894,
+        "fertilizer_kg": 154.19258175675674,
+        "field_size_ha": 1.9068891891891893,
+        "season": "A",
+        "cooperative_support": 0.9864864864864865
       },
       "feature_stds": {
-        "rainfall_mm": 227.8779693263267,
-        "avg_temp_c": 4.1695736270084955,
-        "soil_moisture_pct": 13.898736186206754,
-        "fertilizer_kg": 71.60313252515394,
-        "field_size_ha": 0.9567653495089959,
+        "rainfall_mm": 205.51962842166606,
+        "avg_temp_c": 4.359926451686019,
+        "soil_moisture_pct": 10.632976538685673,
+        "fertilizer_kg": 59.09345637993169,
+        "field_size_ha": 1.034949040048815,
         "season": null,
-        "cooperative_support": 0.49581213695677473
+        "cooperative_support": 0.1162476387438193
       },
-      "interpretation": "Cluster 1 contains 68 farms. These farms receive moderate rainfall (800-1000 mm). Average temperatures are moderate (16-22\u00b0C). Soil moisture is high (>60%). Fertilizer use is moderate (50-150 kg). Farms are medium-sized (1-2.5 ha). Predominantly Season B. Some farms receive cooperative support."
+      "interpretation": "Cluster 1 contains 74 farms. These farms receive moderate rainfall (800-1000 mm). Average temperatures are moderate (16-22\u00b0C). Soil moisture is high (>60%). Fertilizer use is high (>150 kg). Farms are medium-sized (1-2.5 ha). Predominantly Season B. Most farms receive cooperative support."
     },
     {
       "cluster_id": 2,
-      "n_farms": 59,
-      "percentage": 21.14695340501792,
+      "n_farms": 77,
+      "percentage": 27.30496453900709,
       "feature_means": {
-        "rainfall_mm": 1006.9282813559321,
-        "avg_temp_c": 16.242184745762714,
-        "soil_moisture_pct": 38.08504237288136,
-        "fertilizer_kg": 108.75197796610169,
-        "field_size_ha": 2.645105084745762,
-        "season": "B",
-        "cooperative_support": 0.423728813559322
-      },
-      "feature_stds": {
-        "rainfall_mm": 234.49784663600562,
-        "avg_temp_c": 3.139553866934598,
-        "soil_moisture_pct": 13.705081672607017,
-        "fertilizer_kg": 67.65006261458495,
-        "field_size_ha": 0.8825223270446592,
-        "season": null,
-        "cooperative_support": 0.49839016119517676
-      },
-      "interpretation": "Cluster 2 contains 59 farms. These farms receive high rainfall (>1000 mm). Average temperatures are moderate (16-22\u00b0C). Soil moisture is low (<40%). Fertilizer use is moderate (50-150 kg). Farms are large (>2.5 ha). Predominantly Season B. Some farms receive cooperative support."
-    },
-    {
-      "cluster_id": 3,
-      "n_farms": 74,
-      "percentage": 26.523297491039425,
-      "feature_means": {
-        "rainfall_mm": 936.8274837837836,
-        "avg_temp_c": 18.833627027027028,
-        "soil_moisture_pct": 43.840756756756754,
-        "fertilizer_kg": 110.98745675675676,
-        "field_size_ha": 2.0641351351351354,
+        "rainfall_mm": 1034.0440714285717,
+        "avg_temp_c": 18.65481558441558,
+        "soil_moisture_pct": 46.04334155844157,
+        "fertilizer_kg": 123.14940714285713,
+        "field_size_ha": 2.003311688311688,
         "season": "A",
         "cooperative_support": 0.0
       },
       "feature_stds": {
-        "rainfall_mm": 223.04718818219143,
-        "avg_temp_c": 4.120997138221784,
-        "soil_moisture_pct": 17.747285122736194,
-        "fertilizer_kg": 65.86083361348616,
-        "field_size_ha": 1.1551270089015393,
+        "rainfall_mm": 240.1195348634453,
+        "avg_temp_c": 3.7710049259575404,
+        "soil_moisture_pct": 15.792283142786365,
+        "fertilizer_kg": 71.16218053880041,
+        "field_size_ha": 1.1521655508528765,
         "season": null,
         "cooperative_support": 0.0
       },
-      "interpretation": "Cluster 3 contains 74 farms. These farms receive moderate rainfall (800-1000 mm). Average temperatures are moderate (16-22\u00b0C). Soil moisture is moderate (40-60%). Fertilizer use is moderate (50-150 kg). Farms are medium-sized (1-2.5 ha). Predominantly Season B. Few farms receive cooperative support."
+      "interpretation": "Cluster 2 contains 77 farms. These farms receive high rainfall (>1000 mm). Average temperatures are moderate (16-22\u00b0C). Soil moisture is moderate (40-60%). Fertilizer use is moderate (50-150 kg). Farms are medium-sized (1-2.5 ha). Predominantly Season B. Few farms receive cooperative support."
+    },
+    {
+      "cluster_id": 3,
+      "n_farms": 63,
+      "percentage": 22.340425531914892,
+      "feature_means": {
+        "rainfall_mm": 1032.2634111111113,
+        "avg_temp_c": 19.573276190476186,
+        "soil_moisture_pct": 37.909360317460326,
+        "fertilizer_kg": 105.1215015873016,
+        "field_size_ha": 2.2684142857142855,
+        "season": "B",
+        "cooperative_support": 0.9841269841269841
+      },
+      "feature_stds": {
+        "rainfall_mm": 221.60732172382995,
+        "avg_temp_c": 3.911976855665518,
+        "soil_moisture_pct": 13.727986361462367,
+        "fertilizer_kg": 71.601384221047,
+        "field_size_ha": 1.1723410936898513,
+        "season": null,
+        "cooperative_support": 0.1259881576697424
+      },
+      "interpretation": "Cluster 3 contains 63 farms. These farms receive high rainfall (>1000 mm). Average temperatures are moderate (16-22\u00b0C). Soil moisture is low (<40%). Fertilizer use is moderate (50-150 kg). Farms are medium-sized (1-2.5 ha). Predominantly Season B. Most farms receive cooperative support."
     }
   ],
   "n_clusters": 4

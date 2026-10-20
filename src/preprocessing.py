@@ -177,7 +177,7 @@ if __name__ == "__main__":
     from data.generate_data import main as gen_data
     import pandas as pd
     
-    csv_path = Path(__file__).parent.parent / "data" / "AI_A2_2526883.csv"
+    csv_path = Path(__file__).parent.parent / "data" / "AI_A2_2527419.csv"
     df = pd.read_csv(csv_path)
     artifacts = preprocess_pipeline(df)
     print(f"Train shape: {artifacts['X_train_transformed'].shape}")

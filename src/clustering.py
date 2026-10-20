@@ -331,7 +331,7 @@ def plot_clusters(X_scaled: np.ndarray, labels: np.ndarray, output_path: Path):
 
 if __name__ == "__main__":
     import pandas as pd
-    csv_path = Path(__file__).parent.parent / "data" / "AI_A2_2526883.csv"
+    csv_path = Path(__file__).parent.parent / "data" / "AI_A2_2527419.csv"
     df = pd.read_csv(csv_path)
     results = run_clustering_experiment(df)
     plot_clusters(results["X_scaled"], results["labels"], Path(__file__).parent.parent / "artifacts" / "plots" / "clusters.png")

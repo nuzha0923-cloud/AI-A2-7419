@@ -1,6 +1,6 @@
 """
 Individual data generator for Musanze Harvest Intelligence Service.
-Generates reproducible dataset using student-specific seed (LLLL = 6883).
+Generates reproducible dataset using student-specific seed (LLLL = 7419).
 """
 import hashlib
 import json
@@ -11,8 +11,8 @@ import pandas as pd
 
 
 # Student-specific constants
-LLLL = 6883
-VERIFICATION_CODE = "AI-A2-6883"
+LLLL = 7419
+VERIFICATION_CODE = "AI-A2-7419"
 BASE_ROWS = 240 + (LLLL % 41)  # 276 rows
 MISSING_COUNT = round(0.05 * BASE_ROWS)  # 14 missing per column
 DUPLICATE_ROWS = 3
@@ -112,7 +112,7 @@ def main():
     
     # Save CSV with 4 decimal places
     output_dir = Path(__file__).parent
-    csv_path = output_dir / "AI_A2_2526883.csv"
+    csv_path = output_dir / "AI_A2_2527419.csv"
     df_final.to_csv(csv_path, index=False, float_format="%.4f")
     print(f"Saved dataset to {csv_path} with {len(df_final)} rows")
     

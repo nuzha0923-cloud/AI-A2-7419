@@ -1,44 +1,44 @@
 {
-  "verification_code": "AI-A2-6883",
-  "seed": 6883,
+  "verification_code": "AI-A2-7419",
+  "seed": 7419,
   "baseline": {
     "model": "DummyRegressor(strategy='mean')",
-    "mae": 1.8223305653427286,
-    "rmse": 2.274584974989285,
-    "r2": -0.04915766847054592
+    "mae": 2.1794745419103316,
+    "rmse": 2.5954633311548556,
+    "r2": -0.0030688748706930724
   },
   "candidates": {
     "linear_regression": {
       "model": "LinearRegression",
-      "mae": 0.9704263249371053,
-      "rmse": 1.2422827323491876,
-      "r2": 0.6870482932436934
+      "mae": 0.830021211701603,
+      "rmse": 0.9880898950068515,
+      "r2": 0.8546236116739807
     },
     "ridge_regression": {
       "model": "Ridge",
-      "mae": 0.9704263249371053,
-      "rmse": 1.2422827323491876,
-      "r2": 0.6870482932436934
+      "mae": 0.830021211701603,
+      "rmse": 0.9880898950068515,
+      "r2": 0.8546236116739807
     },
     "random_forest": {
       "model": "RandomForestRegressor",
-      "mae": 0.9704263249371053,
-      "rmse": 1.2422827323491876,
-      "r2": 0.6870482932436934
+      "mae": 0.830021211701603,
+      "rmse": 0.9880898950068515,
+      "r2": 0.8546236116739807
     },
     "gradient_boosting": {
       "model": "GradientBoostingRegressor",
-      "mae": 0.9704263249371053,
-      "rmse": 1.2422827323491876,
-      "r2": 0.6870482932436934
+      "mae": 0.830021211701603,
+      "rmse": 0.9880898950068515,
+      "r2": 0.8546236116739807
     }
   },
   "selected_model": "ridge_regression",
   "selected_model_type": "Ridge",
   "selected_metrics": {
-    "mae": 0.7638692505073722,
-    "rmse": 1.0098852204339615,
-    "r2": 0.7931857497040075
+    "mae": 0.6940551287176071,
+    "rmse": 0.8334228192970111,
+    "r2": 0.8965735223923652
   },
-  "selection_reason": "Selected ridge_regression over baseline. RMSE improved by 55.6% (baseline RMSE=2.2746 vs ridge_regression RMSE=1.0099). R\u00b2 improved from -0.0492 to 0.7932."
+  "selection_reason": "Selected ridge_regression over baseline. RMSE improved by 67.9% (baseline RMSE=2.5955 vs ridge_regression RMSE=0.8334). R\u00b2 improved from -0.0031 to 0.8966."
 }

@@ -100,7 +100,7 @@ def main():
     
     # Step 2: Load and validate
     print("\n[2/7] Validating dataset...")
-    csv_path = Path(__file__).parent / "data" / "AI_A2_2526883.csv"
+    csv_path = Path(__file__).parent / "data" / "AI_A2_2527419.csv"
     df = load_and_validate(csv_path, args.seed)
     
     # Step 3: Regression

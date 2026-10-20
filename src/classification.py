@@ -229,7 +229,7 @@ def plot_confusion_matrix(y_true: np.ndarray, y_pred: np.ndarray, output_path: P
 
 if __name__ == "__main__":
     import pandas as pd
-    csv_path = Path(__file__).parent.parent / "data" / "AI_A2_2526883.csv"
+    csv_path = Path(__file__).parent.parent / "data" / "AI_A2_2527419.csv"
     df = pd.read_csv(csv_path)
     results = run_classification_experiment(df)
     
