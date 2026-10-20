@@ -213,10 +213,8 @@ Test coverage includes:
 
 ## Repository
 - **URL:** https://github.com/<your-github-username>/AI-A2-7419.git
-- **Final Commit Hash:** [set on final commit]
 
 ## Evidence Files (for submission)
-- `evidence/AI_A2_2527419_DEMO.mp4` - 2-minute demo video
 - `evidence/AI_A2_2527419_TEST_LOG.pdf` - pytest output
 - `evidence/AI_A2_2527419_DECLARATION.pdf` - Academic integrity declaration
 - `evidence/AI_USE.md` - AI assistance disclosure
